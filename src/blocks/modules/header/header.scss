@@ -1,0 +1,98 @@
+.header {
+    position: relative;
+    background: #F0F1F6;
+    min-height: 950px;
+    &__towel {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__freshener {
+        position: absolute;
+        bottom: 0;
+        right: 410px;
+    }
+    .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    }
+    &__img {
+        margin-top: 113px;
+    }
+    &__contact {
+        display: flex; 
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    a.header__phone {
+        text-decoration: none;
+    }
+    &__phone {
+        display: block;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: 0.2px;
+        color: $main-color;
+    }
+
+    .button_phone {
+        width: 186px;
+        height: 41px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.46px;
+        color: #F0F1F6;
+        border: none;
+    }
+    .button__icon {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 2px;
+    }
+    h1 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48.5218px;
+        line-height: 55px;
+        letter-spacing: 1.04574px;
+        text-transform: uppercase;
+        color: $main-color;
+        width: 700px;
+        height: 153px;
+        margin-top: 98px;
+        margin-bottom: 31px;
+    }
+    &__items {
+        margin-top: 65px;
+        display: grid;
+        width: 630px;
+        grid-template-columns: repeat(2, 306px);
+        column-gap: 38px;
+        &-column {
+            display: grid;
+            grid-template-columns: 46px 241px;
+            grid-template-rows: repeat(3, 34px);
+            row-gap: 32px;
+            column-gap: 19px;
+
+        }
+    }
+    &__item-text {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.952475px;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+}

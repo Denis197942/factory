@@ -1,3 +1,4 @@
+
 // Переменные, миксины, функции
 @import "helpers/variables";
 @import "helpers/mixins";
@@ -11,4 +12,47 @@
 @import "base/general";
 
 // БЭМ-блоки
-@import "../blocks/modules";
+.container {
+    margin: 0 380px;
+}
+
+.button {
+    background: $main-color;
+    &__header {
+        &-catalog {
+            width: 333.93px;
+            height: 65.18px;
+            border: 3.57143px solid $main-color;
+            background-color: #fff;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            text-align: center;
+            letter-spacing: 0.410715px;
+            color: $main-color;
+            margin-right: 27px;
+        }
+        &-order {
+            width: 260.71px;
+            height: 65.18px;
+            background: $main-color;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            letter-spacing: 0.410715px;
+            color: #F0F1F6;
+        }
+    }
+}
+
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+@import "../blocks/modules/header/header.scss";
+
+
