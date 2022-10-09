@@ -64,6 +64,18 @@
         color: #FFFFFF;
         font-style: normal;
         margin-left: 20px;
+        &-modules {
+            width: 293.51px;
+            height: 44.03px;
+            margin-top: 17.67px;
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 13.6973px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-style: normal;
+        }
     }
     &__tabs {
         display: none;
@@ -79,6 +91,78 @@
         height: 4.35px;
         &_active {
             background: $main-color;
+        }
+    }
+    &__modules {
+        display: none;
+        flex-direction: column;
+        width: 294px;
+        background: #FFFFFF;
+        box-shadow: 0px 10.9975px 10.081px rgba(0, 0, 0, 0.3);
+        height: 279.82px;
+        padding: 16px 34px 21px 34px;
+        &-title {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 26px;
+            color: $main-color;
+            font-style: normal;
+        }
+        &-subtitle {
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            color: #212121;
+            font-style: normal;
+            margin-top: 6px;
+        }
+        &-text {
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            color: #212121;
+            font-style: normal;
+            margin-top: 15px;
+        }
+        &-input {
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 17.6108px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            color: #757575;
+            font-style: normal;
+            width: 267.51px;
+            height: 26.03px;
+            border: 0.978378px solid #000000;
+            padding: 9px 12px;
+        }
+        &-policy {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 10.7622px;
+            line-height: 15px;
+            color: #000000;
+            font-style: normal;
+            margin-top: 10px;
+            a {
+                color: #A65E34;
+            }
+        }
+        input[type=checkbox] {
+            box-sizing: border-box;
+            width: 30px;
+            border-radius: 25%;
+            margin-left: 20px;
+            background-color: #A65E34;
+            border-color: #A65E34;
         }
     }
     
@@ -116,6 +200,9 @@
             grid-template-rows: repeat(6, 560px);
         }
         &__tabs {
+            display: flex;
+        }
+        &__modules {
             display: flex;
         }
     }
