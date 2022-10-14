@@ -54,13 +54,13 @@ button:not(:disabled) {
 }
 
 @media(max-width: 1878px) {
-    .container {
+    .container_media {
         margin: 0 50px;
     }
 }
 
 @media(max-width: 1535px) {
-    .container {
+    .container_media, .container{
         margin: 0 20px;
     }
 }
