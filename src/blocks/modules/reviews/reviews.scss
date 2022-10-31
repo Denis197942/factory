@@ -1,0 +1,303 @@
+.reviews {
+    padding: 127px 0 176px 0;
+    &__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 61px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: $main-color;
+        &-margin {
+        margin-top: 184px;
+
+        }
+    }
+    &__wrapper {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        margin-top: 81px;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    &__arrow-left {
+        position: absolute;
+        top: 128px;
+        left: -106px;
+    }
+    &__arrow-right {
+        position: absolute;
+        top: 128px;
+        right: -106px;
+
+    }
+    &__wrapp {
+        position: relative;
+        width: 554px;
+        height: 197px;
+        background: #F0F0F0;
+        border: 2px solid $main-color;
+        padding: 56px 0 30px 0;
+        &-right {
+            margin-left: 30px;
+        }
+    }
+    &__quotes {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 171.484px;
+        line-height: 195px;
+        text-align: center;
+        letter-spacing: 0.762152px;
+        text-transform: uppercase;
+        color: #A65E34;
+        position: absolute;
+        top: -156px;
+        left: 250px;
+    }
+    &__star {
+        margin-left: 219px;
+    }
+    &__text {
+        width: 470.14px;
+        height: 47px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.246957px;
+        color: #212121;
+        margin-left: 48px;
+    }
+    &__foto {
+        margin-top: 32px;
+        margin-left: 263px;
+    }
+    &__signature {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+        color: #757575;
+        text-align: center;
+    }
+    &__grid {
+        margin-top: 40px;
+        display: grid;
+        grid-template-rows: repeat(2, 140px);
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 40px;
+        row-gap: 20px;
+        align-items:center;
+        justify-items: center;
+    }
+    &__gridmini {
+        display: grid;
+        grid-template-rows: 140px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+        column-gap: 40px;
+        align-items:center;
+        justify-items: start;
+    }
+    &__image {
+        filter: grayscale(100%); 
+        text-align: center;
+        &-right {
+            padding-left: 324px;
+        }
+        &__hide {
+            display: none;
+        }
+
+    }
+    &__tabs {
+        display: none;
+        width: 269px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__tab {
+        width: 39px;
+        background: #C4C4C4;
+        border-radius: 2.6129px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        height: 4.35px;
+        &_active {
+            background: $main-color;
+        }
+    }
+}
+@media(max-width: 2220px) {
+    .reviews {
+        &__arrow-left {
+            left: 14px;
+        }
+        &__arrow-right {
+            right: -10px;
+        }
+    }
+}
+
+@media(max-width: 2125px) {
+    .reviews {
+        &__arrow-left {
+            left: -60px;
+        }
+        &__arrow-right {
+            right: -60px;
+        }
+    }
+}
+
+@media(max-width: 1980px) {
+    .reviews {
+        &__arrow-left {
+            left: -120px;
+        }
+        &__arrow-right {
+            right: -120px;
+        }
+    }
+}
+
+@media(max-width: 1770px) {
+    .reviews {
+        &__arrow-left {
+            left: -180px;
+        }
+        &__arrow-right {
+            right: -180px;
+        }
+    }
+}
+
+@media(max-width: 1645px) {
+    .reviews {
+        &__arrow-left {
+            left: -250px;
+        }
+        &__arrow-right {
+            right: -250px;
+        }
+    }
+}
+
+@media(max-width: 1532px) {
+    .reviews {
+        &__arrow-left {
+            left: 40px;
+        }
+        &__arrow-right {
+            right: 40px;
+        }
+    }
+}
+
+
+
+@media(max-width: 1440px) {
+    .reviews {
+        &__arrow-left {
+            display: none;
+        }
+        &__arrow-right {
+            display: none;
+
+        }
+        &__tabs {
+            display: flex;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .reviews {
+        &__wrapp-right {
+            display: none;
+        }
+        &__title-margin {
+            margin-top: 70px;
+        }
+        &__grid {
+            grid-template-rows: repeat(3, 140px);
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 20px;
+            row-gap: 15px;
+        }
+        &__gridmini {
+            display: none;
+        }
+        &__image-right {
+            padding-left: 0;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .reviews {
+        &__grid {
+            grid-template-rows: repeat(3, 140px);
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+            
+}
+
+@media(max-width: 576px) {
+    .reviews {
+        &__title {
+            font-size: 26px;
+            line-height: 115%;
+        }
+        &__wrapp {
+            width: 362px;
+            height: 214px;
+            text-align: center;
+            padding: 43px 26px 0 31px;
+        }
+        &__quotes {
+            font-size: 111.25px;
+            line-height: 126px;
+            top: -104px;
+        }
+        &__star {
+            margin-left: 0;
+        }
+        &__text {
+            width: 305px;
+            height: 30.49px;
+            font-size: 10.3799px;
+            line-height: 13px;
+            margin-left: 0;
+        }
+        &__foto {
+            margin-left: 0;
+        }
+        &__signature {
+            font-size: 9.08244px;
+            line-height: 11px;
+        }
+        &__image {
+            width: 110px;
+        }
+    }
+    } 
+
+@media(max-width: 375px) {
+    .reviews {
+        &__image {
+            width: 90px;
+        }
+    }
+    } 
+
