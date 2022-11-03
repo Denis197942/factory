@@ -115,7 +115,7 @@
         &-right {
             padding-left: 324px;
         }
-        &__hide {
+        &-hide {
             display: none;
         }
 
@@ -239,6 +239,9 @@
         }
         &__image-right {
             padding-left: 0;
+        }
+        &__image-hide {
+            display: inline-block;
         }
     }
 }
