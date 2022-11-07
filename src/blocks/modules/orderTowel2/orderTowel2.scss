@@ -1,0 +1,192 @@
+.orderTowel2 {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    min-height: 362px;
+    background: #EAEAEB;
+    position: relative;
+    padding-left: 56px;
+    padding-top: 88px;
+    &__bathrobe {
+        position: absolute;
+        right: 0;
+        top: -135px;
+        filter: drop-shadow(0px 18.2235px 45.5588px rgba(0, 0, 0, 0.1));
+    }
+    &__towel {
+        position: absolute;
+        left: 0;
+        bottom: -140px;
+        filter: drop-shadow(0px 18.6471px 46.6176px rgba(0, 0, 0, 0.1));
+    }
+    &__bathrobe-mini {
+        display: none;
+    }
+    &__towel-mini {
+        display: none;
+    }
+    &__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 110.68%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $main-color;
+        width: 944px;
+        height: 110px;
+        margin: 0 auto;
+    }
+    &__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.546644px;
+        color: #A2A2A2;
+        margin-top: 29px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: row;
+        margin-top: 33px;
+        justify-content: center;
+        &-input {
+            width: 231px;
+            height: 40px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28.7611px;
+            line-height: 39px;
+            text-align: center;
+            letter-spacing: 0.546644px;
+            color: #A2A2A2;
+            padding: 24px 110px 24px 21px;
+            border: none;
+        }
+    }
+    .button__orderTowel2 {
+        margin-left: 30px;
+        width: 362px;
+        height: 87px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28.7611px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.546644px;
+        color: #FFFFFF;
+        border: none;
+    }
+}
+
+@media(max-width: 1535px) {
+    .orderTowel2 {
+        padding-left: 0;
+        &__bathrobe {
+            display: none;
+        }
+        &__towel {
+            display: none;
+        }
+        &__bathrobe-mini {
+            display: block;
+            position: absolute;
+            top: -85px;
+            right: 0;
+
+        }
+        &__towel-mini {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: -80px;
+        }
+    }
+}
+
+@media(max-width: 1440px) {
+    .orderTowel2 {
+        &__bathrobe-mini {
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .orderTowel2 {
+        padding-top: 30px;
+        &__title {
+            font-size: 28px;
+            width: 480px;
+            height: 48px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+            width: 480px;
+            margin: 20px auto;
+        }
+        &__form {
+            flex-direction: column;
+            align-items: center;
+        }
+        .button__orderTowel2 {
+            margin-top: 30px;
+            margin-left: 0;
+        }
+    }  
+}
+
+@media(max-width: 768px) {
+    .orderTowel2 {
+        padding-top: 55px;
+        &__title {
+            width: 357px;
+            height: 48px;
+            font-size: 22px;
+        }
+        &__text {
+            width: 310px;
+            height: 26px;
+            font-size: 11px;
+            line-height: 13px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .orderTowel2 {
+        &__bathrobe-mini {
+            display: none;
+        }
+        &__towel-mini {
+            display: none;
+        }
+    }
+    } 
+
+@media(max-width: 375px) {
+.orderTowel2 {
+    &__bathrobe-mini {
+        display: none;
+    }
+    &__towel-mini {
+        display: none;
+    }
+    &__form-input {
+        width: 160px;
+        font-size: 20px;
+    }
+    .button__orderTowel {
+        width: 285px;
+        font-size: 20px;
+    }
+    }
+} 
+
+
