@@ -11,3 +11,9 @@ for(let elem of button1) {
 cross.addEventListener('click', function () {
     modulWindow.style.display = 'none';
 });
+
+modulWindow.addEventListener('click', function(e) {
+    if(e.target === modulWindow) {
+        modulWindow.style.display = 'none';
+    }
+});
