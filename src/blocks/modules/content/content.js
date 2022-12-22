@@ -18,11 +18,43 @@ modal.addEventListener('click', function(e) {
     }
 });
 
-for(let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener('click', function() {
-        this.className += ' content__tab_active';
-        wraps[i].style.display = 'block';
+if (window.matchMedia("(max-width: 768px)").matches) {
+    const header = document.querySelector('.content__tabs'),
+      tab = document.querySelectorAll('.content__tab'),
+      content = document.querySelectorAll('.content__wrap');
+
+      function hideTabContent() {
+        content.forEach(item => {
+            item.style.display = 'none';
+        });
+
+        tab.forEach(item => {
+            item.classList.remove('content__tab_active');
+        });
+    }
+
+    function showTabContent(i = 0) {
+        content[i].style.display = 'block';
+        tab[i].classList.add('content__tab_active');
+
+    }
+
+    hideTabContent();
+    showTabContent();  
+
+    header.addEventListener('click', function(e) {
+        const target = e.target;
+        // if(target.classList.contains(tab.replace(/\./, "")) || target.parentNode.classList.contains(tab.replace(/\./, ""))) 
+            tab.forEach((item, i) => {
+                if(target == item || target.parentNode == item) {
+                    hideTabContent();
+                    showTabContent(i);
+                }
+            });
+        
     });
-};
+
 
   
+  }
+

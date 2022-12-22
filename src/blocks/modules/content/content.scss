@@ -10,7 +10,7 @@
         row-gap: 36px;
     }
     &__wrap {
-        display: none;
+        display: block;
         background: #E9E7E7;
     }
     &__image {
@@ -89,7 +89,7 @@
         background: #C4C4C4;
         border-radius: 2.6129px;
         transform: matrix(1, 0, 0, -1, 0, 0);
-        height: 6px;
+        height: 10px;
         &_active {
             background: $main-color;
         }
@@ -178,8 +178,9 @@
             border-color: #A65E34;
         }
     }
-    
 }
+
+
 
 @media(max-width: 1535px) {
 
@@ -207,10 +208,11 @@
 
 @media(max-width: 768px) {
     .content {
+        min-height: 500px;
         padding: 100px 0;
         &__wrapper {
             grid-template-columns: 360px;
-            grid-template-rows: repeat(6, 560px);
+            grid-template-rows: repeat(1, 560px);
         }
         &__tabs {
             display: flex;
